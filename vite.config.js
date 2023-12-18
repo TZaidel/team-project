@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
@@ -13,7 +14,13 @@ export default defineConfig(({ command }) => {
       sourcemap: true,
 
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        // input: glob.sync('./src/*.html'),
+  //--------------
+        input: {
+          index: resolve(__dirname, 'src/index.html'),
+          cart: resolve(__dirname, 'src/cart.html')
+        },
+  //--------------
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -25,6 +32,7 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
+
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
 });

@@ -1,6 +1,6 @@
 <footer class="footer-page">
   <div class="footer-container container">
-    <a href="../index.html" class="social-list">
+    <a href="./homepage.html" class="social-list">
       <div class="logo-footer">
     <svg class="logo-footer-svg" width="28" height="28">
       <use href="../images/symbol-defs.svg#icon-logo"></use>
@@ -11,21 +11,21 @@
  <div class="footer-social">
   <ul class="social-list">
     <li class="social-item">
-      <a href="" class="footer-link-icon">
+      <a href="https://www.facebook.com/goITclub/" class="footer-link-icon">
                 <svg aria-label="facebook" class="footer-social-icon" width="24" height="24">
                     <use href="../images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
             </a>
     </li>
     <li class="social-item">
-      <a href="" class="footer-link-icon">
+      <a href="https://www.instagram.com/goitclub/" class="footer-link-icon">
                 <svg aria-label="instagram" class="footer-social-icon" width="24" height="24">
                     <use href="../images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
             </a>
     </li>
     <li class="social-item">
-      <a href="" class="footer-link-icon">
+      <a href="https://www.youtube.com/c/GoIT" class="footer-link-icon">
                 <svg aria-label="youtube" class="footer-social-icon" width="24" height="24">
                     <use href="../images/symbol-defs.svg#icon-youtube"></use>
                 </svg>
@@ -36,12 +36,14 @@
     <h3 class="footer-title">Discover the Variety of Flavors and Quality</h3>
     <p class="footer-text">An online store where you will find fresh, natural and delicious products for a healthy life and unforgettable gastronomic adventures.</p>
     <p class="footer-text-subscribe">Subscribe and learn about new products!</p>
-        <div class="footer-subscribe">
-          <form class="subscribe-form">
-            <label class="subscribe-form-input"><input type="text" name="user_subscribe" class="subscribe-input" placeholder="E-mail"></label>
-                <button type="submit" class="subscribe-btn">Send</button>
-           </form>
-        </div>
+    <div class="footer-subscribe">
+      <form class="subscribe-form" action="/subscribe" method="post">
+        <label class="subscribe-form-input">
+          <input type="email" name="user_subscribe" class="subscribe-input" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </label>
+        <button type="submit" class="subscribe-btn">Send</button>
+      </form>
+    </div>
          <p class="footer-text">Food Boutique. All rights reserved.</p>
          <div class="text-serice">
           <a href="">

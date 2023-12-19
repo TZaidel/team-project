@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-main;
+  color: $color-black;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: $color-light-grey;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//  Стандартний контейнер для мобільних пристроїв
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $container-max-width;
+  padding: 0 $container-side-padding;
+}
+
+// Планшет
+@media screen and (min-width: 768px) {
+  $container-width: $tablet-container-width;
+}
+
+// Ноутбук
+@media screen and (min-width: 1280px) {
+  $container-width: $desktop-container-width;
+  $secondary-container-width: $secondary-desktop-container-width;
+}

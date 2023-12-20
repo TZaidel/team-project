@@ -25,7 +25,7 @@
 
   /* Конфігурації контейнера */
   --container-width: var(--mobile-container-width);
-  --container-side-padding: 20px;
+  --container-side-padding: 15px;
   --container-max-width: calc(
     var(--container-width) + var(--container-side-padding) * 2
   );
